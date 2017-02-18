@@ -6,6 +6,8 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
 	<main>
@@ -134,32 +136,19 @@
 
 				</div>
 				<div class="container">
-					<hr class="line-top">
 					<div class="slider-goods">
-					
-						
-						<ul class="slider-left">
-							<li><img src="img/img/s-goods-1.png" alt=""></li>
-							<li><img src="img/img/s-goods-2.png" alt=""></li>
-						</ul>
-						
-						<div class="slider-middle">
-							<h1>фотогалерея</h1>
+							<img src="img/img/s-goods-1.png" alt="">
+							<img src="img/img/s-goods-2.png" alt="">
 							<img src="img/img/s-goods-mid.png" alt="">
-						</div>
 
-						<ul class="slider-left">
-							<li><img src="img/img/s-goods-3.png" alt=""></li>
-							<li><img src="img/img/s-goods-4.png" alt=""></li>
-						</ul>
-					
+							<img src="img/img/s-goods-3.png" alt="">
+							<img src="img/img/s-goods-4.png" alt="">
 					</div>
-					<hr class="line-bot">
 
 					<div class="next-prev-btn">
 						<ul>
-							<li><a href="#">Предыдущая</a></li>
-							<li><a href="#">Следующая</a></li>
+							<li class="prevy"><a >Предыдущая</a></li>
+							<li class="nexty"><a>Следующая</a></li>
 						</ul>
 					</div>
 				</div>
@@ -170,11 +159,27 @@
 					<div class="rec-main-cont">
 						<h2>отзыв о товаре</h2>
 						<div class="recall-cont">
-							<img src="img/img/photo-recall.png" alt="">
-							<div class="text-rec">
-								<h3>Кот Матроскин, инженер</h3>
-								<p>Прохлада и чистота утреннего пустого купе, голые полки, блестящий пластик вагонных стен — и никого. Ночного монаха, четками петита, нонпарелью молитвы отгонявшего дьявольский образ греха, пуще смерти боявшегося тебя и меня, нас, обнявшихся бестий, приняла в свое лоно праведная, непорочная станция зари.</p>
-							</div>
+							<div class="item-of-slider">
+								<img src="img/img/photo-recall.png" alt="">
+								<div class="text-rec">
+									<h3>Кот Матроскин, инженер</h3>
+									<p>Прохлада и чистота утреннего пустого купе, голые полки, блестящий пластик вагонных стен — и никого. Ночного монаха, четками петита, нонпарелью молитвы отгонявшего дьявольский образ греха, пуще смерти боявшегося тебя и меня, нас, обнявшихся бестий, приняла в свое лоно праведная, непорочная станция зари.</p>
+								</div>
+						       </div>
+							<div class="item-of-slider">
+								<img src="img/img/photo-recall.png" alt="">
+								<div class="text-rec">
+									<h3>Кот Матроскин, инженер</h3>
+									<p>Прохлада и чистота утреннего пустого купе, голые полки, блестящий пластик вагонных стен — и никого. Ночного монаха, четками петита, нонпарелью молитвы отгонявшего дьявольский образ греха, пуще смерти боявшегося тебя и меня, нас, обнявшихся бестий, приняла в свое лоно праведная, непорочная станция зари.</p>
+								</div>
+						       </div>
+							<div class="item-of-slider">
+								<img src="img/img/photo-recall.png" alt="">
+								<div class="text-rec">
+									<h3>Кот Матроскин, инженер</h3>
+									<p>Прохлада и чистота утреннего пустого купе, голые полки, блестящий пластик вагонных стен — и никого. Ночного монаха, четками петита, нонпарелью молитвы отгонявшего дьявольский образ греха, пуще смерти боявшегося тебя и меня, нас, обнявшихся бестий, приняла в свое лоно праведная, непорочная станция зари.</p>
+								</div>
+						       </div>
 						</div>
 					</div>
 				</div>
@@ -241,5 +246,20 @@
 
 
 	<!-- controls -->
+	<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.slider-goods').slick({
+				centerMode: true,
+				centerPadding: '60px',
+				slidesToShow: 3,
+				prevArrow: $('.prevy'),
+				nextArrow: $('.nexty')
+			})
+			$('.recall-cont').slick(
+			)
+		})
+	</script>
 </body>
 </html>

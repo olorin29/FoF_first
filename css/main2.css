@@ -28,6 +28,9 @@ main {
 	top: 0px;
 	z-index: 0;
 }
+.recall-cont {
+	overflow: hidden; 
+}
 
 .top-header {
 	background: rgba(0,51,51, .5);
